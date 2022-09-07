@@ -9,7 +9,7 @@ class Character:
         self.defense = 0
 
     def player_turn(self):                                                      # this lets us input the value for each players turn, which is returned
-        choice_value = input(f"{self.name}! What would you like to do?\nEnter the number!\n1: Attack\n2: Buff Strength\n3: Agility\n4: Heal (Heals Remaining: {self.heal_counter})\n5: Buff Defense\n")
+        choice_value = input(f"{self.name}! What would you like to do?\nEnter the number!\n1: Attack\n2: Buff Strength\n3: Agility\n4: Heal (Heals Remaining: {self.heal_counter})\n5: Buff Defense\n6: Special Attack\n")
         return choice_value
 
     def buff(self):                                                             # this buffs the strength of the player by 4

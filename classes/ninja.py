@@ -8,3 +8,9 @@ class Ninja(Character):
         self.strength = 10
         self.speed = 5
         self.type = "Ninja"
+
+    def shuriken(self,player):
+        amount = (self.strength - player.defense) + 3
+        player.health -= amount
+        print(f"--------------------\n{self.name} threw a shuriken at {player.name} for {amount} damage!\n--------------------")
+        return self

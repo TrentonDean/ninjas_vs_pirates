@@ -21,6 +21,18 @@ def choice(self,choice_value):                              # this function take
             choice(self,self.player_turn())
     elif choice_value == "5":
         self.defend()
+    elif choice_value == "6":
+        if self == player1:                                 # decides which player to attack
+            if self.type == "Pirate":
+                player1.scurvy(player2)
+            elif self.type == "Ninja":
+                player1.shuriken(player2)
+        elif self == player2:
+            if self.type == "Pirate":
+                player2.scurvy(player1)
+            elif self.type == "Ninja":
+                player2.shuriken(player1)
+        
     else:
         print("--------------------\nPlease make a valid choice")# insurance to keep the game going
         choice(self,self.player_turn())
