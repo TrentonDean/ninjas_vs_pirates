@@ -2,7 +2,7 @@
 
 This was an assignment for my course but I had such a good time with it, I decided to put it here. Below are the rules, I hope you enjoy!
 
-# RULES\n
+<h2>RULES</h2>
 # The game will ask for the name of player 1 and what team they prefer to be on: Ninjas or Pirates\n
 # Player 2 will type in their name and be assigned the opposite team of player 1\n
 # The game then shows you each player's stats for a few seconds and then it starts!\n
